@@ -1,0 +1,29 @@
+# Estética Estelar Jeanhyv
+Window.SetBackgroundTopColor (0.05, 0.0, 0.08);
+Window.SetBackgroundBottomColor (0.1, 0.02, 0.12);
+
+# 1. Cargar y Ajustar a Pantalla
+c_img = Image("logo.png");
+s_w = Window.GetWidth();
+s_h = Window.GetHeight();
+
+# Escalar la imagen galáctica a toda la pantalla
+chica_img = c_img.Scale(s_w, s_h);
+chica_spr = Sprite(chica_img);
+chica_spr.SetX(0);
+chica_spr.SetY(0);
+
+# 2. Animación de "Respiración de Nebulosa"
+t = 0;
+fun refresh_callback () {
+  t++;
+  
+  # Pulso suave de opacidad (Holograma)
+  opacidad = 0.93 + (Math.Sin(t / 25) * 0.07);
+  chica_spr.SetOpacity(opacidad);
+  
+  # Micro-flotación (Balanceo galáctico)
+  chica_spr.SetY(Math.Sin(t / 40) * 4);
+}
+
+Plymouth.SetRefreshFunction (refresh_callback);

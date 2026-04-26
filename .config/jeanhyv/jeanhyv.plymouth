@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Jeanhyv
+Description=Anime Hacker Girl Splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/jeanhyv
+ScriptFile=/usr/share/plymouth/themes/jeanhyv/jeanhyv.script

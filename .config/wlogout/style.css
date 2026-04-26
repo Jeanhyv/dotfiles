@@ -1,0 +1,27 @@
+window {
+    background-color: rgba(26, 27, 38, 0.9);
+}
+
+button {
+    background-color: rgba(43, 48, 59, 0.5);
+    color: #ffffff;
+    border: 3px solid #ffc0cb;
+    border-radius: 20px;
+    margin: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff69b4;
+    border: 3px solid #ffffff;
+}
+
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
+#hibernate { background-image: image(url("/usr/share/wlogout/icons/hibernate.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }
