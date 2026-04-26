@@ -1,0 +1,73 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "/home/jean/Descargas/Personalizacion/fastfetch.txt",
+        "padding": {
+            "top": 0, // Subido un poco para que el ASCII respire
+            "left": 2,
+            "right": 3
+        },
+        "color": {
+            "1": "magenta" 
+        }
+    },
+    "display": {
+        "separator": " 󰓏 ", // Corazón como separador entre clave y valor
+        "color": {
+            "keys": "magenta",
+            "title": "magenta"
+        }
+    },
+    "modules": [
+        {
+            "type": "title",
+            "format": "  󰭹  {1}@{2}  󰭹", // Estrellitas en el título
+            "color": "magenta"
+        },
+        {
+            "type": "custom",
+            "format": "  󰭹 󰭹 󰭹 󰭹 󰭹 󰭹 󰭹 󰭹 󰭹 󰭹 󰭹 󰭹 󰭹 󰭹", // Línea decorativa
+            "outputColor": "magenta"
+        },
+        "break",
+
+        // --- SECCIÓN SOFTWARE ---
+        { "type": "os", "key": "󰣠  Distro", "keyColor": "magenta" },
+        { "type": "kernel", "key": "󰌢  Kernel", "keyColor": "magenta" },
+        { "type": "uptime", "key": "󰅐  Uptime", "keyColor": "magenta" },
+        { "type": "packages", "key": "󰏖  Packs ", "keyColor": "magenta" },
+        { "type": "shell", "key": "󱆃  Shell ", "keyColor": "magenta" },
+        { "type": "terminal", "key": "󰆍  Term  ", "keyColor": "magenta" },
+        { "type": "wm", "key": "󱂬  D.E.  ", "keyColor": "magenta" },
+        
+        { "type": "custom", "format": "  ──────────────────────────", "outputColor": "magenta" },
+
+        // --- SECCIÓN HARDWARE ---
+        { "type": "cpu", "key": "󰻠  CPU   ", "keyColor": "magenta" },
+        { "type": "gpu", "key": "󰢮  GPU   ", "keyColor": "magenta" },
+        { "type": "memory", "key": "󰍛  RAM   ", "keyColor": "magenta" },
+        { "type": "disk", "key": "󰋊  Disk  ", "keyColor": "magenta" },
+        { "type": "display", "key": "󰍹  Screen", "keyColor": "magenta" },
+        { "type": "battery", "key": "󰁹  Power ", "keyColor": "magenta" },
+        
+        { "type": "custom", "format": "  ──────────────────────────", "outputColor": "magenta" },
+        // --- SECCIÓN DEV & SYSTEM (100% Offline) ---
+        { "type": "processes", "key": "󰆼  Procs ", "keyColor": "magenta" },
+        { "type": "terminalfont", "key": "󰛖  Font  ", "keyColor": "magenta" },
+        { 
+            "type": "weather", 
+            "timeout": 10, // Si no hay internet, se rinde rápido
+            "key": "󰖐  Weather", 
+            "keyColor": "magenta" 
+        },
+        { 
+            "type": "datetime", 
+            "key": "󰃭  Date  ", 
+            "format": "{1}-{3}-{11}", // Formato cute: Año-Mes-Día
+            "keyColor": "magenta" 
+        },
+        
+        "break",
+        "colors"
+    ]
+}
